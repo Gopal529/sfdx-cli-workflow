@@ -13,3 +13,5 @@ jobs:
       - uses: ./
         with:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
+      - name: Version-Check
+        run: echo ${{sfdx --version}}
