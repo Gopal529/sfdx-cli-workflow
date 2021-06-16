@@ -13,6 +13,3 @@ jobs:
       - uses: ./
         with:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
-      - run: sfdx config:set defaultusername='gopal'
-      - name: sfdx-test-run
-        run: sfdx force:apex:test:run -l RunLocalTests -w 30
