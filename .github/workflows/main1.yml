@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: Gopal529/sfdx-cli-workflow
+      - uses: ./
         with:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
